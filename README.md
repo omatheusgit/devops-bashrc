@@ -8,14 +8,15 @@ Minha configuração de terminal Bash focada em **produtividade DevOps**.
 
 Prompt de duas linhas com hora, diretório, branch do Git e contexto Kubernetes — com cores automáticas por ambiente pra não rodar comando em prod sem querer. 😅
 
+<!--
 ```
 ╭──┤ [14:30] ~/projetos/minha-app (󰊢 main) { k8s dev-cluster:default }
 ╰─❯ _
 ```
-
-<!-- Descomente e substitua quando tiver um screenshot:
-![screenshot](./screenshot.png)
 -->
+
+
+![screenshot](./line_bashrc.png)
 
 > ⚠️ O contexto K8s fica **vermelho** em produção, **verde** em dev e **amarelo** em staging.
 
@@ -34,6 +35,8 @@ Prompt de duas linhas com hora, diretório, branch do Git e contexto Kubernetes 
 ## Cores do contexto K8s
 
 A cor do contexto Kubernetes no prompt muda automaticamente baseada no **nome do contexto** no seu `~/.kube/config`.
+
+![screenshot](./colors_context.png)
 
 **⚠️ Importante:** Para as cores funcionarem, o nome do seu contexto no kubeconfig **precisa conter** uma dessas palavras:
 
